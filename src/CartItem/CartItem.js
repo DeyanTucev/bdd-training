@@ -21,6 +21,7 @@ module.exports = class CartItem {
 
     get name() {
         //TODO Implement this method
+        return this.#_name;
     }
 
     get quantity() {
