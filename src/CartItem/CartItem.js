@@ -67,6 +67,9 @@ module.exports = class CartItem {
 
     #validateArticleId(articleId) {
         //TODO Implement this method
+        if (typeof articleId !== "number" || articleId < 1) {
+            throw new InvalidArticleIdException();
+        }
     }
 
     #validateQuantity(quantity) {
